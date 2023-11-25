@@ -247,7 +247,7 @@ export const productListController = async (req, res) => {
       products,
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(400).send({
       success: false,
       message: "error in per page ctrl",
@@ -270,7 +270,7 @@ export const searchProductController = async (req, res) => {
       .select("-photo");
     res.json(resutls);
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(400).send({
       success: false,
       message: "Error in Search Product API",
@@ -296,7 +296,7 @@ export const realtedProductController = async (req, res) => {
       products,
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(400).send({
       success: false,
       message: "error while geting related product",
@@ -316,7 +316,7 @@ export const productCategoryController = async (req, res) => {
       products,
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     res.status(400).send({
       success: false,
       error,
@@ -337,7 +337,7 @@ export const braintreeTokenController = async (req, res) => {
       }
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -371,6 +371,6 @@ export const brainTreePaymentController = async (req, res) => {
       }
     );
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
